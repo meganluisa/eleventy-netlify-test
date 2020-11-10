@@ -1,15 +1,399 @@
-<html>
+<!doctype html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+        <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+        <title>Video Producer Example</title>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <title>Eleventy + Netlify CMS Blog Example</title>
     </head>
-    
-
-    <body>
-        <h1>
-            Eleventy + Netlify CMS Blog Example
-        </h1>
+        <div class="preload">
+            <div class="load-align">
+                <div class="film"><span></span><span></span><span></span><span></span></div>
+                <div class="film"><span></span><span></span><span></span><span></span></div>
+            </div>
+        </div>
+        <div class="main-wrapper">
+            
+            
+            
+            
+            
+           <div class="bg-wrapp">
+                <div class="clip active">
+                    <div class="video-wrapper">
+                        <video loop poster="/assets/img/poster.png" class="bgvid" id="bgvid">
+                            <source type="video/mp4" src="/assets/video/video.webm">
+                            <source type="video/mp4" src="/assets/video/video.ogv">
+                            <source type="video/webm" src="/assets/video/video.mp4">
+                        </video>
+                    </div>
+                    <div class="close-full-video">
+                        <span class="fa fa-times"></span>
+                    </div>
+                    <div class="bg bg-bg-chrome act" style="background-image:url(/assets/img/home_slide_3.jpg)">
+                    </div>
+                    <div class="layer-dark"></div>
+                </div>
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(/assets/img/home_slide_2.jpg)">
+                    </div>
+                    <div class="layer-dark"></div>
+                </div>
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(/assets/img/home_slide_3.jpg)">
+                    </div>
+                    <div class="layer-dark"></div>
+                </div>
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(/assets/img/home_slide_1.jpg)">
+                    </div>
+                    <div class="layer-dark"></div>
+                </div>
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(/assets/img/home_slide_2.jpg)">
+                    </div>
+                    <div class="layer-dark"></div>
+                </div>
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(/assets/img/home_slide_3.jpg)">
+                    </div>
+                    <div class="layer-dark"></div>
+                </div>
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(/assets/img/home_slide_1.jpg)">
+                    </div>
+                    <div class="layer-dark"></div>
+                </div>
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(/assets/img/home_slide_2.jpg)">
+                    </div>
+                    <div class="layer-dark"></div>
+                </div>
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(/assets/img/home_slide_1.jpg)">
+                    </div>
+                    <div class="layer-dark"></div>
+                </div>
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(/assets/img/home_slide_3.jpg)">
+                    </div>
+                    <div class="layer-dark"></div>
+                </div>
+            </div>
+            <div class="hide-content">
         
-Hello world! Welcome to the Eleventy + Netlify CMS demo by Megan.
+            
+            
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#">Home</a>
+                            <ul class="dropmenu">
+                            <li><a href="/index/">Big trailer slider</a></li>
+                            <li><a href="index_2.html">Welcome slider</a></li>
+                            <li><a href="index_3.html">Trailers small slider #1</a></li>
+                            
+                            <li><a href="index_4.html">Fullscreen home</a></li>
+                            <li><a href="index_5.html">Screens slider</a></li>
+                            <li><a href="index_6.html">Small Screens slider</a></li>
+                            <li><a href="index_7.html">Creative trailer slider</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="/about/">About us</a></li>
+                        <li><a href="/team/">Our team</a></li>
+                        <li><a href="/news/">Blog</a></li>
+                        <li><a href="/contact/">Contact us</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-menu-icon"><a href="#"><i></i></a></div>
+            
+            <div class="header-folow style-2 folow-right">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-pinterest-p"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-vimeo"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-tumblr"></a>
+                </div>
+                <div class="logo logo-top">
+                    <a href="/index/"><img src="/assets/img/logo.png" alt="NRG Video Producer"></a>
+                </div>
+                <div class="block">
+                    <div class="arrows arrows-left">
+                        <div class="home-slider">
+                            <div class="swiper-container swiper-6 swiper-two-bg" data-autoplay="0" data-loop="1" data-speed="1000" data-center="0" data-slides-per-view="1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="caption text-left">
+                                            <div class="title">
+                                                <div class="date">
+                                                    <h4>from <span>02 september/2015</span></h4></div>
+                                                <h3>your video trailer #1</h3>
+                                                <p class="p-white">Ut eu nibh odio. Aenean aliquam imperdiet augue vel semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+                                            </div>
+                                        </div>
+                                        <div class="video-pause vertical-align play-icon style-2">
+                                            <span class="fa fa-play"></span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="caption text-left">
+                                            <div class="title">
+                                                <div class="date">
+                                                    <h4>from <span>02 september/2015</span></h4></div>
+                                                <h3>your video trailer #1</h3>
+                                                <p class="p-white">Ut eu nibh odio. Aenean aliquam imperdiet augue vel semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="caption text-left">
+                                            <div class="title">
+                                                <div class="date">
+                                                    <h4>from <span>02 september/2015</span></h4></div>
+                                                <h3>your video trailer #1</h3>
+                                                <p class="p-white">Ut eu nibh odio. Aenean aliquam imperdiet augue vel semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="caption text-left">
+                                            <div class="title">
+                                                <div class="date">
+                                                    <h4>from <span>02 september/2015</span></h4></div>
+                                                <h3>your video trailer #1</h3>
+                                                <p class="p-white">Ut eu nibh odio. Aenean aliquam imperdiet augue vel semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="caption text-left">
+                                            <div class="title">
+                                                <div class="date">
+                                                    <h4>from <span>02 september/2015</span></h4></div>
+                                                <h3>your video trailer #1</h3>
+                                                <p class="p-white">Ut eu nibh odio. Aenean aliquam imperdiet augue vel semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="caption text-left">
+                                            <div class="title">
+                                                <div class="date">
+                                                    <h4>from <span>02 september/2015</span></h4></div>
+                                                <h3>your video trailer #1</h3>
+                                                <p class="p-white">Ut eu nibh odio. Aenean aliquam imperdiet augue vel semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="caption text-left">
+                                            <div class="title">
+                                                <div class="date">
+                                                    <h4>from <span>02 september/2015</span></h4></div>
+                                                <h3>your video trailer #1</h3>
+                                                <p class="p-white">Ut eu nibh odio. Aenean aliquam imperdiet augue vel semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="caption text-left">
+                                            <div class="title">
+                                                <div class="date">
+                                                    <h4>from <span>02 september/2015</span></h4></div>
+                                                <h3>your video trailer #1</h3>
+                                                <p class="p-white">Ut eu nibh odio. Aenean aliquam imperdiet augue vel semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="caption text-left">
+                                            <div class="title">
+                                                <div class="date">
+                                                    <h4>from <span>02 september/2015</span></h4></div>
+                                                <h3>your video trailer #1</h3>
+                                                <p class="p-white">Ut eu nibh odio. Aenean aliquam imperdiet augue vel semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="caption text-left">
+                                            <div class="title">
+                                                <div class="date">
+                                                    <h4>from <span>02 september/2015</span></h4></div>
+                                                <h3>your video trailer #1</h3>
+                                                <p class="p-white">Ut eu nibh odio. Aenean aliquam imperdiet augue vel semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination hidden-pag"></div>
+                                <div class="swiper-arrow-left arr-sw"><b></b><b></b><span class="fa fa-long-arrow-left"></span></div>
+                                <div class="swiper-arrow-right arr-sw"><b></b><b></b><span class="fa fa-long-arrow-right"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="testi-slider">
+                        <div class="swiper-container" data-autoplay="0" data-loop="1" data-speed="1000" data-center="0" data-slides-per-view="1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testi-block">
+                                        <img src="/assets/img/quote.png" alt="" class="quote">
+                                        <p class="p-white">Nulla volutpat consectetur tellus et gravida. Suspendisse ultrices erat at dolor lacinia sollicitudin. Curabitur varius pretium rhoncus. Vivamus at consectetur odio</p>
+                                        <div class="testi-people">
+                                            <img src="/assets/img/people.png" alt="">
+                                            <h4>julia centon, <span>the movie magazine</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testi-block">
+                                        <img src="/assets/img/quote.png" alt="" class="quote">
+                                        <p class="p-white">Nulla volutpat consectetur tellus et gravida. Suspendisse ultrices erat at dolor lacinia sollicitudin. Curabitur varius pretium rhoncus. Vivamus at consectetur odio</p>
+                                        <div class="testi-people">
+                                            <img src="/assets/img/people.png" alt="">
+                                            <h4>julia centon, <span>the movie magazine</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testi-block">
+                                        <img src="/assets/img/quote.png" alt="" class="quote">
+                                        <p class="p-white">Nulla volutpat consectetur tellus et gravida. Suspendisse ultrices erat at dolor lacinia sollicitudin. Curabitur varius pretium rhoncus. Vivamus at consectetur odio</p>
+                                        <div class="testi-people">
+                                            <img src="/assets/img/people.png" alt="">
+                                            <h4>julia centon, <span>the movie magazine</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination vertical-pag vertical-align"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="bottom-item bottom-item-testi">
+                        <div class="swiper-container swiper-prew" data-autoplay="5000" data-loop="0" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-xs-slides="3" data-sm-slides="6" data-md-slides="8" data-lg-slides="9" data-add-slides="10">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="prev-item active">
+                                        <img src="/assets/img/prew_img_1.jpg" alt="" class="resp-img">
+                                        <div class="layer-dark"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="prev-item">
+                                        <img src="/assets/img/prew_img_2.jpg" alt="" class="resp-img">
+                                        <div class="layer-dark"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="prev-item">
+                                        <img src="/assets/img/prew_img_3.jpg" alt="" class="resp-img">
+                                        <div class="layer-dark"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="prev-item">
+                                        <img src="/assets/img/prew_img_4.jpg" alt="" class="resp-img">
+                                        <div class="layer-dark"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="prev-item">
+                                        <img src="/assets/img/prew_img_5.jpg" alt="" class="resp-img">
+                                        <div class="layer-dark"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="prev-item">
+                                        <img src="/assets/img/prew_img_6.jpg" alt="" class="resp-img">
+                                        <div class="layer-dark"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="prev-item">
+                                        <img src="/assets/img/prew_img_7.jpg" alt="" class="resp-img">
+                                        <div class="layer-dark"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="prev-item">
+                                        <img src="/assets/img/prew_img_8.jpg" alt="" class="resp-img">
+                                        <div class="layer-dark"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="prev-item">
+                                        <img src="/assets/img/prew_img_9.jpg" alt="" class="resp-img">
+                                        <div class="layer-dark"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="prev-item">
+                                        <img src="/assets/img/prew_img_1.jpg" alt="" class="resp-img">
+                                        <div class="layer-dark"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination hidden-pag"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        
+        
+        
+<h1>Hello! Megan here</h1>
+
+        <footer>
+            <div class="container">
+                <div class="footer-soon">
+                    <h4>in cinema from <span class="col-main">02 september</span></h4>
+                </div>
+                <ul class="footer-list">
+                    <li><span>studio name</span></li>
+                    <li>PRESENTS AN <span>PRODUCERS here</span></li>
+                    <li>PRODUCTION A <span>dorian doe </span></li>
+                    <li>PICTURE <span>Alan Cabot p.j. Cabot</span></li>
+                    <li>CASTING BY <span>THE CASTING COMPANY NAME</span></li>
+                    <li>COSTUMES BY <span>COSTUME COMPANY</span></li>
+                    <li>PRODUCTION DESIGNER <span>THE DESIGN COMPANY</span></li>
+                    <li>DIRECTOR OF PHOTOGRAPHY <span>PHOTOGRAPHER STUDIO</span></li>
+                    <li>MUSIC BY <span>Sound COMPANY</span></li>
+                    <li>EDITED BY <span>The editor company</span></li>
+                    <li>EXECUTIVE PRODUCER <span>pablo picaso</span></li>
+                    <li>PRODUCED BY <span>eonardo davinchi</span></li>
+                    <li>STORY BY <span>FAMOUS WRITER</span></li>
+                    <li>SCREENPLAY BY <span>THE SCREEN</span></li>
+                    <li>WRITER DIRECTED BY <span>DIRECTOR NAME</span></li>
+                </ul>
+                <ul class="link-lists">
+                    <li><a href="#">FILM RATINGS</a></li>
+                    <li><a href="#">PARENTAL GUIDE</a></li>
+                    <li><a href="#">MPAA</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">TERMS OF USE</a></li>
+                </ul>
+                <span class="copyright">© 2016 NRG video producer. development by <a href="#">NRGThemes</a></span>
+            </div>
+        </footer>
+        <script src="/assets/js/jquery-2.1.4.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/jquery.fancybox.pack.js"></script>
+        <script src="/assets/js/idangerous.swiper.min.js"></script>
+        <script src="/assets/js/all.js"></script>
     </body>
 </html>

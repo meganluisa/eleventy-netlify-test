@@ -1,0 +1,125 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <title>Crtve Video Producer</title>
+</head>
+
+<body>
+    <div class="preload">
+        <div class="load-align">
+            <div class="film"><span></span><span></span><span></span><span></span></div>
+            <div class="film"><span></span><span></span><span></span><span></span></div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <div class="clip">
+            <div class="bg bg-bg-chrome act" style="background-image:url(/assets/img/home_slide_7.jpg)">
+            </div>
+            <div class="layer-dark"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a>
+                    <ul class="dropmenu">
+                        <li><a href="/index/">Big trailer slider</a></li>
+                        <li><a href="index_2.html">Welcome slider</a></li>
+                        <li><a href="index_3.html">Trailers small slider #1</a></li>
+                        
+                        <li><a href="index_4.html">Fullscreen home</a></li>
+                        <li><a href="index_5.html">Screens slider</a></li>
+                        <li><a href="index_6.html">Small Screens slider</a></li>
+                        <li><a href="index_7.html">Creative trailer slider</a></li>
+                    </ul>
+                </li>
+                <li><a href="/about/">About us</a></li>
+                <li><a href="/team/">Our team</a></li>
+                <li><a href="/news/">Blog</a></li>
+                <li class="active"><a href="/contact/">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="home-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <form onSubmit="return submitForm();" action="/" method="post" name="contactform" class="contact-form" id="contact-form">
+                            <h2 class="capp">Contact Us</h2>
+                            <input type="text" placeholder="Your name" name="name" value="" required>
+                            <input type="email" placeholder="Your email" name="email" value="" required>
+                            <input type="text" placeholder="Subject" name="subject" value="">
+                            <textarea name="message" placeholder="Your message" required></textarea>
+                            <input type="submit" value="submit" class="submit">
+                            <span class="success"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logo logo-top">
+            <a href="index.html"><img src="/assets/img/logo.png" alt="Nrg Video Producer"></a>
+        </div>
+        <div class="nav-menu-icon"><a href="#"><i></i></a></div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-soon">
+                <h4>in cinema from <span class="col-main">02 september</span></h4>
+            </div>
+            <ul class="footer-list">
+                <li><span>film studio name</span></li>
+                <li>RESENTS AN <span>RODUCERS here</span></li>
+                <li>PRODUCTION A<span>dorian doe </span></li>
+                <li>PICTURE<span>Alan Cabot p.j. Cabot</span></li>
+                <li>CASTING BY<span>THE CASTING COMPANY</span></li>
+                <li>COSTUMES BY<span>THE COSTUME group</span></li>
+                <li>PRODUCTION DESIGNER<span>THE DESIGN group</span></li>
+                <li>DIRECTOR OF PHOTOGRAPHY <span>b.b.Photo</span></li>
+                <li>MUSIC BY<span>Sound lords</span></li>
+                <li>EDITED BY<span>The editor team</span></li>
+                <li>EXECUTIVE PRODUCER<span>pablo picaso</span></li>
+                <li>PRODUCED BY<span>eonardo davinchi</span></li>
+                <li>STORY BY<span>THE NOVELIST</span></li>
+                <li>SCREENPLAY BY<span>THE SCREEN</span></li>
+                <li>WRITER DIRECTED BY<span>DIRECTOR NAME HERE</span></li>
+            </ul>
+            <ul class="link-lists">
+                <li><a href="#">FILM RATINGS</a></li>
+                <li class="active"><a href="#">PARENTAL GUIDE</a></li>
+                <li><a href="#">MPAA</a></li>
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="#">TERMS OF USE</a></li>
+            </ul>
+            <span class="copyright">© 2016 Crtve video producer. development by <a href="#">CrtveTemplate</a></span>
+        </div>
+    </footer>
+    <div class="video-player">
+        <div class="video-iframe">
+            <iframe class="box-size" src=""></iframe>
+        </div>
+        <div class="close-iframe">+</div>
+    </div>
+    <script>
+    function submitForm() {
+        $.ajax({
+            type: 'POST',
+            url: 'email-action.php',
+            data: $('#contact-form').serialize(),
+            success: function(response) {
+                $('.submit').html('sent');
+                $('.success').html('Your message was sent successfully');
+                document.contactform.reset();
+            }
+        });
+        return false;
+    }
+    </script>
+    <script src="/assets/js/jquery-2.1.4.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/idangerous.swiper.min.js"></script>
+    <script src="/assets/js/all.js"></script>
+</body>

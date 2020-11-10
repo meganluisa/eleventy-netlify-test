@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+        <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+        <title>Video Producer Example</title>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <title>Eleventy + Netlify CMS Blog Example</title>
+    </head>
+        <div class="preload">
+            <div class="load-align">
+                <div class="film"><span></span><span></span><span></span><span></span></div>
+                <div class="film"><span></span><span></span><span></span><span></span></div>
+            </div>
+        </div>
+        <div class="main-wrapper">
+            {% block darkclip %}
+            {% endblock darkclip %}
+            {% block darkclip2 %}
+            {% endblock darkclip2 %}
+            {% block bigclip %}
+            {% endblock bigclip %}
+            {% block darkclip3 %}
+            {% endblock darkclip3 %}
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#">Home</a>
+                            <ul class="dropmenu">
+                            <li><a href="/index/">Big trailer slider</a></li>
+                            <li><a href="index_2.html">Welcome slider</a></li>
+                            <li><a href="index_3.html">Trailers small slider #1</a></li>
+                            
+                            <li><a href="index_4.html">Fullscreen home</a></li>
+                            <li><a href="index_5.html">Screens slider</a></li>
+                            <li><a href="index_6.html">Small Screens slider</a></li>
+                            <li><a href="index_7.html">Creative trailer slider</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="/about/">About us</a></li>
+                        <li><a href="/team/">Our team</a></li>
+                        <li><a href="/news/">Blog</a></li>
+                        <li><a href="/contact/">Contact us</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-menu-icon"><a href="#"><i></i></a></div>
+            {% block background %}
+            {% endblock background %}
+        </div>
+        {% block newscontainer %}
+        {% endblock newscontainer %}
+        {{ content | safe }}
+
+        <footer>
+            <div class="container">
+                <div class="footer-soon">
+                    <h4>in cinema from <span class="col-main">02 september</span></h4>
+                </div>
+                <ul class="footer-list">
+                    <li><span>studio name</span></li>
+                    <li>PRESENTS AN <span>PRODUCERS here</span></li>
+                    <li>PRODUCTION A <span>dorian doe </span></li>
+                    <li>PICTURE <span>Alan Cabot p.j. Cabot</span></li>
+                    <li>CASTING BY <span>THE CASTING COMPANY NAME</span></li>
+                    <li>COSTUMES BY <span>COSTUME COMPANY</span></li>
+                    <li>PRODUCTION DESIGNER <span>THE DESIGN COMPANY</span></li>
+                    <li>DIRECTOR OF PHOTOGRAPHY <span>PHOTOGRAPHER STUDIO</span></li>
+                    <li>MUSIC BY <span>Sound COMPANY</span></li>
+                    <li>EDITED BY <span>The editor company</span></li>
+                    <li>EXECUTIVE PRODUCER <span>pablo picaso</span></li>
+                    <li>PRODUCED BY <span>eonardo davinchi</span></li>
+                    <li>STORY BY <span>FAMOUS WRITER</span></li>
+                    <li>SCREENPLAY BY <span>THE SCREEN</span></li>
+                    <li>WRITER DIRECTED BY <span>DIRECTOR NAME</span></li>
+                </ul>
+                <ul class="link-lists">
+                    <li><a href="#">FILM RATINGS</a></li>
+                    <li><a href="#">PARENTAL GUIDE</a></li>
+                    <li><a href="#">MPAA</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">TERMS OF USE</a></li>
+                </ul>
+                <span class="copyright">© 2016 NRG video producer. development by <a href="#">NRGThemes</a></span>
+            </div>
+        </footer>
+        <script src="/assets/js/jquery-2.1.4.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/jquery.fancybox.pack.js"></script>
+        <script src="/assets/js/idangerous.swiper.min.js"></script>
+        <script src="/assets/js/all.js"></script>
+    </body>
+</html>
