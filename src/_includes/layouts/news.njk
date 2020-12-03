@@ -14,20 +14,20 @@
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                         <div class="arrows">
-                            <div class="swiper-container news-slider" data-autoplay="0" data-loop="0" data-speed="1000" data-center="0" data-slides-per-view="2" data-direction="horizontal">
+                            <div class="swiper-container news-slider" data-autoplay="0" data-loop="0" data-speed="1000" data-center="0" data-slides-per-view="3" data-direction="horizontal">
                                 <div class="swiper-wrapper popup-gallery">
                                     {% set postslist = collections.posts %}
                                     {% for post in collections.posts %}
                                     <div class="swiper-slide">
                                         <div class="news-wrap">
                                             <div class="video-block">
-                                                <a href="#{{ post.data.id }}" class="fancybox" rel="gallery">
+                                                <a href="#{{ post.fileSlug }}" class="fancybox" rel="gallery">
                                                     <span class="clip">
                             							<span class="bg bg-bg-chrome act" style="background-image:url({{post.data.featuredImage | url }})">
                             							</span>
                                                     </span>
                                                 </a>                                               
-                                                <div class="popup-main" id="{{ post.data.id }}">
+                                                <div class="popup-main" id="{{ post.fileSlug }}">
                                                     <div class="container">
                                                         <div class="row">
                                                             <div class="col-md-8 col-md-offset-2">
@@ -37,7 +37,7 @@
                                                                         <div class="title">
                                                                             <h4>{{ post.data.date.toUTCString() }}</h4>
                                                                             <h2> {{ post.data.title }}</h2>
-                                                                            <p>{{ post.data.description }}</p>
+                                                                            <p>{{ post.data.body }}</p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
